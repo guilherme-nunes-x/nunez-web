@@ -1,9 +1,14 @@
 :root {
-  --dourado: #ebb71b;
-  --preto: #000000;
-  --cinza-escuro: #333333;
-  --branco: #F5F5F5;
+  --gold: #EBB71B;
+  --dark-gold: #765C0E;
+  --black-medium: #0A0A0A;
+  --black: #000000;
+  --dark-gray: #333333;
+  --soft-black: #1A1A1A;
+  --white: #F5F5F5;
+  --medium-gray: #7B7B7B;
   --bordeaux: #800020;
+  --dark-brown: #400010;
   --playfair-display: "Playfair Display", serif;
   --merriweather: "Merriweather", serif;
   --montserrat: "Montserrat", sans-serif;
