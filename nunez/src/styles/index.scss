@@ -1,0 +1,12 @@
+@import 'variaveis';
+
+@mixin font($font-family) {
+    font-family: $font-family;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
