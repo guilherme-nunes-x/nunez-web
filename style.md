@@ -6,16 +6,16 @@ Claro! Vamos adaptar o texto e a estrutura para se adequar a um sistema de **Imo
 
 ### **Cores**
 
-- **Dourado (#EBB71B)**: Transmite riqueza e exclusividade. Ideal para destacar elementos importantes e transmitir a sensação de luxo. (--gold)
-- **Dourado Escuro (#765C0E)**: Um tom de dourado mais profundo que adiciona um toque de sofisticação adicional. (--dark-gold)
-- **Preto Médio (#0A0A0A)**: Um tom de preto mais suave, ideal para criar contrastes mais sutis. (--black-medium)
-- **Preto (#000000)**: Elegante e sofisticado, cria um contraste marcante com o dourado e reforça o aspecto premium. (--black)
-- **Cinza Escuro (#333333)**: Um tom neutro e moderno que complementa o preto e o dourado sem competir com eles. (--dark-gray)
-- **Preto Suave (#1A1A1A)**: Um tom preto mais suave que pode ser usado para criar um contraste sutil. (--soft-black)
-- **Branco (#F5F5F5)**: Limpo e clássico, pode ser usado como fundo para permitir que outras cores se destaquem. (--white)
-- **Cinza Médio (#7B7B7B)**: Um tom neutro intermediário que pode ser utilizado para textos secundários e detalhes discretos. (--medium-gray)
-- **Bordeaux (#800020)**: Um tom de vermelho profundo, associado à elegância e sofisticação, que pode ser usado em detalhes. (--bordeaux)
-- **Marrom Escuro (#400010)**: Um tom de marrom profundo que adiciona uma sensação de solidez e estabilidade. (--dark-brown)
+- **Dourado (#EBB71B)**: Transmite riqueza e exclusividade. Ideal para destacar elementos importantes e transmitir a sensação de luxo. 
+- **Dourado Escuro (#765C0E)**: Um tom de dourado mais profundo que adiciona um toque de sofisticação adicional. 
+- **Preto Médio (#0A0A0A)**: Um tom de preto mais suave, ideal para criar contrastes mais sutis.
+- **Preto (#000000)**: Elegante e sofisticado, cria um contraste marcante com o dourado e reforça o aspecto premium. 
+- **Cinza Escuro (#333333)**: Um tom neutro e moderno que complementa o preto e o dourado sem competir com eles. 
+- **Preto Suave (#1A1A1A)**: Um tom preto mais suave que pode ser usado para criar um contraste sutil. 
+- **Branco (#F5F5F5)**: Limpo e clássico, pode ser usado como fundo para permitir que outras cores se destaquem. 
+- **Cinza Médio (#7B7B7B)**: Um tom neutro intermediário que pode ser utilizado para textos secundários e detalhes discretos. 
+- **Bordeaux (#800020)**: Um tom de vermelho profundo, associado à elegância e sofisticação, que pode ser usado em detalhes. 
+- **Marrom Escuro (#400010)**: Um tom de marrom profundo que adiciona uma sensação de solidez e estabilidade. 
 
 ### **Fontes de Texto**
 
