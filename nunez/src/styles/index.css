@@ -3,4 +3,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url("cursor.svg"), auto;
+}
+
+.inicio {
+  width: 100%;
+  height: 100dvh;
+  background-color: #1A1A1A;
+}
+.inicio h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 10dvh;
+  color: #F5F5F5;
+}
+
+.slideImg {
+  width: 100%;
+  height: 100dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+.slideImg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.swiper-pagination {
+  padding: 3dvh 1dvh;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #F5F5F5;
+  padding: 0.8dvh;
 }/*# sourceMappingURL=index.css.map */
