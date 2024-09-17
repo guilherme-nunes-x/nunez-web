@@ -1,39 +1,74 @@
 @import "variaveis";
-@mixin font($font) {
-  font-family: $font;
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateY(1dvh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .inicio {
   width: 100%;
   height: 100dvh;
-  background-color: $soft-black;
-  h1 {
-    @include font($playfair-display);
-    font-size: 10dvh;
-    color: $white;
-  }
-}
-
-.slideImg {
-  width: 100%;
-  height: 100dvh;
-  object-fit: cover;
-  position: relative;
-  box-sizing: border-box;
-  opacity: 0.8;
-  img {
-    display: block;
+  background: linear-gradient($dark-gold, $soft-black);
+  .slideImg {
     width: 100%;
-    height: 100%;
+    height: 100dvh;
     object-fit: cover;
     position: relative;
-    z-index: 0;
+    box-sizing: border-box;
+    opacity: 0.6;
+    ba img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 0;
+    }
   }
-}
-.swiper-pagination {
-  padding: 3dvh 1dvh;
-  .swiper-pagination-bullet {
-    background-color: $white;
-    padding: .8dvh;
+  .swiper-pagination {
+    padding: 3dvh 1dvh;
+
+    .swiper-pagination-bullets {
+      @include position(absolute);
+      padding: 0.8dvh;
+    }
+
+    .swiper-pagination-bullet {
+      background: transparent;
+      border: 0.3dvh solid $black;
+      padding: 0.4dvh;
+      margin: 1dvh 0;
+      width: 7.5dvh;
+      border-radius: 0.5dvh;
+    }
+    .swiper-pagination-bullet-active {
+      border: 0.3dvh solid $gold;
+    }
+  }
+  .slide-content {
+    position: relative;
+    color: $white;
+
+    .slide-text {
+      @include position(absolute);
+      @include font($playfair-display);
+      padding: 5dvh;
+      display: flex;
+      flex-direction: column;
+      animation: text 1s ease-in-out;
+      .slide-title {
+        font-size: 15dvh;
+      }
+      .slide-paragraph {
+        font-size: 3.3dvh;
+        padding: 2.5dvh;
+        width: 110dvh;
+      }
+    }
   }
 }

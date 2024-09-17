@@ -1,25 +1,32 @@
-$gold: #EBB71B;
-$dark-gold: #765C0E;
-$black-medium: #0A0A0A;
+$gold:#fbc41e;
+$dark-gold: #765c0e;
+$black-medium: #0a0a0a;
 $black: #000000;
 $dark-gray: #333333;
-$soft-black: #1A1A1A;
-$white: #F5F5F5;
-$medium-gray: #7B7B7B;
+$soft-black: #1a1a1a;
+$white: #f5f5f5;
+$medium-gray: #7b7b7b;
 $bordeaux: #800020;
 $dark-brown: #400010;
 $playfair-display: "Playfair Display", serif;
 $merriweather: "Merriweather", serif;
 $montserrat: "Montserrat", sans-serif;
 $lato: "Lato", sans-serif;
-$cursor: url('cursor.svg'), auto;
+$cursor: url("cursor.svg"), auto;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: $cursor;
-  }
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: $cursor;
+}
+@mixin font($font) {
+  font-family: $font;
+}
+@mixin position($position) {
+  position: $position;
+  bottom: 26dvh;
+  left: 15dvh;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
