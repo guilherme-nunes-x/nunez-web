@@ -3,8 +3,6 @@
 <p>Projeto Nuñez</p>
 </h1>
 
----
-
 <div align="center">
     <p>Um projeto desenvolvido pelo tecnico em informatica Guilherme Nunes e o aluno do ensino medio Carlos Daniel</p> 
 </div>
