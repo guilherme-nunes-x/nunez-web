@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import './styles/index.css';
+import FooterProject from './components/footerProject'; // Renomeado para FooterProject
 
 function App() {
   const images = [
@@ -38,6 +39,7 @@ function App() {
           ))}
         </Swiper>
       </div>
+      <FooterProject /> {/* Alterado para FooterProject */}
     </div>
   );
 }

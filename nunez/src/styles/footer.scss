@@ -1,0 +1,13 @@
+@import "variaveis";
+
+.footer {
+  background: $soft-black;
+  height: 12dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    @include font($lato, 3dvh, $white);
+    opacity: .9;
+}
+}

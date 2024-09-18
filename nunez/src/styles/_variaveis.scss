@@ -20,9 +20,13 @@ $cursor: url("cursor.svg"), auto;
   box-sizing: border-box;
   cursor: $cursor;
 }
-@mixin font($font) {
+
+@mixin font($font, $font-size, $color) {
   font-family: $font;
+  font-size: $font-size;
+  color: $color;
 }
+
 @mixin position($position) {
   position: $position;
   bottom: 26dvh;
