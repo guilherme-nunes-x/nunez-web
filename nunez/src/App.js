@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import './styles/index.css';
-import FooterProject from './components/footerProject'; // Renomeado para FooterProject
+import FooterProject from './components-index/footerProject'; // Renomeado para FooterProject
 
 function App() {
   const images = [
