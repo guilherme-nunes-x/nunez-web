@@ -4,7 +4,8 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import './styles/index.css';
-import FooterProject from './components-index/footerProject'; // Renomeado para FooterProject
+import FooterProject from './components/footerProject'; 
+import NavbaProject from './components/navbarProject';
 
 function App() {
   const images = [
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavbaProject />
       <div className="inicio">
         <Swiper
           slidesPerView={1}
@@ -39,7 +41,7 @@ function App() {
           ))}
         </Swiper>
       </div>
-      <FooterProject /> {/* Alterado para FooterProject */}
+      <FooterProject /> 
     </div>
   );
 }

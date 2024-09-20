@@ -14,6 +14,7 @@
   width: 100%;
   height: 100dvh;
   background: linear-gradient($dark-gold, $soft-black);
+  position: relative;
   .slideImg {
     width: 100%;
     height: 100dvh;
@@ -40,14 +41,13 @@
 
     .swiper-pagination-bullet {
       background: transparent;
-      border: 0.3dvh solid $black;
-      padding: 0.4dvh;
+      border-bottom: 0.5dvh solid $black;
       margin: 1dvh 0;
-      width: 7.5dvh;
-      border-radius: 0.5dvh;
+      width: 12dvh;
+      border-radius: 0dvh;
     }
     .swiper-pagination-bullet-active {
-      border: 0.3dvh solid $gold;
+      border-bottom: 0.5dvh solid $gold;
     }
   }
   .slide-content {
@@ -56,7 +56,7 @@
 
     .slide-text {
       @include position(absolute);
-      @include font($playfair-display);
+      font-family: $playfair-display;
       padding: 5dvh;
       display: flex;
       flex-direction: column;

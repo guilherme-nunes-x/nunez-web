@@ -3,7 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("cursor.svg"), auto;
+  scroll-behavior: smooth;
+}
+
+html {
+  background: #0a0a0a;
 }
 
 @keyframes text {
@@ -20,6 +24,7 @@
   width: 100%;
   height: 100dvh;
   background: linear-gradient(#765c0e, #1a1a1a);
+  position: relative;
 }
 .inicio .slideImg {
   width: 100%;
@@ -50,14 +55,13 @@
 }
 .inicio .swiper-pagination .swiper-pagination-bullet {
   background: transparent;
-  border: 0.3dvh solid #000000;
-  padding: 0.4dvh;
+  border-bottom: 0.5dvh solid #000000;
   margin: 1dvh 0;
-  width: 7.5dvh;
-  border-radius: 0.5dvh;
+  width: 12dvh;
+  border-radius: 0dvh;
 }
 .inicio .swiper-pagination .swiper-pagination-bullet-active {
-  border: 0.3dvh solid #fbc41e;
+  border-bottom: 0.5dvh solid #fbc41e;
 }
 .inicio .slide-content {
   position: relative;

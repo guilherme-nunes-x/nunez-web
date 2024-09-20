@@ -1,4 +1,4 @@
-$gold:#fbc41e;
+$gold: #fbc41e;
 $dark-gold: #765c0e;
 $black-medium: #0a0a0a;
 $black: #000000;
@@ -12,15 +12,16 @@ $playfair-display: "Playfair Display", serif;
 $merriweather: "Merriweather", serif;
 $montserrat: "Montserrat", sans-serif;
 $lato: "Lato", sans-serif;
-$cursor: url("cursor.svg"), auto;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: $cursor;
+  scroll-behavior: smooth;
 }
-
+html {
+  background: $black-medium;
+}
 @mixin font($font, $font-size, $color) {
   font-family: $font;
   font-size: $font-size;
