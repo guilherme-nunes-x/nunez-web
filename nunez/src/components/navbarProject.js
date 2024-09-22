@@ -2,11 +2,11 @@ import logo from './logo-limpa-golden.png';
 import "../styles/navbar/navbar.css";
 function NavbaProject() {
   return (
-    <nav class="navbar">
-      <div class="logo">
+    <nav className="navbar">
+      <div className="logo">
         <a href="app.js"><img src={logo} alt="Logo" /></a>
       </div>
-      <ul class="nav-links">
+      <ul className="nav-links">
         <li>
           <a href="#">Propriedades</a>
         </li>
@@ -17,7 +17,7 @@ function NavbaProject() {
           <a href="#">Sobre Nós</a>
         </li>
       </ul>
-      <a href="#" class="cta-button">
+      <a href="#" className="cta-button">
         Agende uma Visita
       </a>
     </nav>
