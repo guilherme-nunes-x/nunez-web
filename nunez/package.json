@@ -10,6 +10,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
+    "sass": "^1.79.3",
+    "sass-loader": "^16.0.2",
     "swiper": "^11.1.14",
     "web-vitals": "^2.1.4"
   },
