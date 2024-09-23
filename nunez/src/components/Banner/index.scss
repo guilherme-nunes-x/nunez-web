@@ -1,0 +1,33 @@
+@import "../../styles/Global.scss";
+
+.background {
+  background: linear-gradient(to bottom, $dark-gold, $black);
+  .banner {
+    height: 100dvh;
+    background: url("https://images5.alphacoders.com/561/thumb-1920-561118.jpg");
+    width: 100%;
+    background-size: cover;
+    opacity: .8;
+  }
+}
+.text {
+    @include position(absolute);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10.5dvh 0 0 8dvh;
+    height: 100%;
+    animation: text 1s ease-in-out;
+    .title {
+      @include font($playfair-display, 18dvh, $white);
+    }
+    .subtitle {
+      @include font($merriweather, 4.5dvh, $white);
+    }
+    .button {
+      font-size: 2.5dvh;
+      font-family: $montserrat;
+    }
+}

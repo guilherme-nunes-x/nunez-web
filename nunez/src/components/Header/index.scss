@@ -1,0 +1,20 @@
+@import "../../styles/Global.scss";
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5dvh 0;
+  width: 100%;
+  background: $black;
+  box-shadow: $box-black 0 0.625dvh 1.875dvh;
+  z-index: 100;
+  @include position(absolute);
+  top: 0;
+  .logo {
+    img {
+      height: 16dvh;
+      scale: 1.6;
+    }
+  }
+}

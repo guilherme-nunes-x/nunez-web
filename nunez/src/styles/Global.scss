@@ -1,7 +1,18 @@
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateY(1dvh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 $gold: #fbc41e;
 $dark-gold: #765c0e;
 $black-medium: #0a0a0a;
 $black: #000000;
+$box-black: #00000059;
 $dark-gray: #333333;
 $soft-black: #1a1a1a;
 $white: #f5f5f5;
