@@ -1,5 +1,5 @@
 <h1 align='center'>
-<img src='logotipos/logo-limpa-golden.png' alt='logo empresarial' width="400">
+<img src='nunez/src/styles/imgs/logo-limpa-golden.png' alt='logo empresarial' width="400">
 <p>Projeto Nuñez</p>
 </h1>
 
