@@ -2,17 +2,20 @@
 
 .background {
   background: linear-gradient(to bottom, $dark-gold, $black);
+  @include position(relative);
   .banner {
+    @include position(relative);
+    z-index: 0;
     height: 100dvh;
     background: url("https://images5.alphacoders.com/561/thumb-1920-561118.jpg");
     width: 100%;
     background-size: cover;
-    opacity: .7;
+    opacity: 0.7;
   }
-}
-.text {
+  .text {
     @include position(absolute);
-    top: 0;
+    z-index: 1;
+    top: 0dvh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -21,13 +24,26 @@
     height: 100%;
     animation: text 1s ease-in-out;
     .title {
-      @include font($playfair-display, 18dvh, $white);
+      @include font($playfair-display, 22dvh, $white);
     }
     .subtitle {
-      @include font($merriweather, 4.5dvh, $white);
+      @include font($merriweather, 6dvh, $white);
+      margin-bottom: 6dvh;
     }
     .button {
-      font-size: 2.5dvh;
-      font-family: $montserrat;
+      @include font($montserrat, 4dvh, $white);
+      padding: 2.2dvh 9dvh;
+      margin: 0 0 14dvh 0;
+      border: 0.3dvh solid $white;
+      cursor: pointer;
+      z-index: 1;
+      backdrop-filter: blur(0.5dvh);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: $bordeaux;
+        border: 0.3dvh solid $bordeaux;
+        box-shadow: $box-black 0 0.625dvh 1.875dvh;
+      }
     }
+  }
 }

@@ -1,0 +1,21 @@
+@import "../../styles/Global.scss";
+.productsHeader {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2.5dvh 0 2.5dvh 3dvh;
+  box-shadow: $box-black 0 0.625dvh 1.875dvh;
+  .title {
+    @include font($playfair-display, 6.5dvh, $gold);
+  }
+}
+
+.productsCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4dvh 9dvh;
+  background: $black-medium;
+  padding: 6dvh 0;
+}

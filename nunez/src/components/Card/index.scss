@@ -1,0 +1,56 @@
+@import "../../styles/Global.scss";
+button {
+  all: inherit;
+}
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1.5dvh;
+  gap: 3dvh;
+  background: $black;
+  padding: 0 0 3.5dvh 0;
+  .img {
+    img {
+      border-radius: 1.5dvh 1.5dvh 0 0;
+      object-fit: contain;
+      object-position: center;
+      background-size: cover;
+      height: auto;
+      max-height: 40dvh;
+      width: 100%;
+    }
+  }
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2dvh;
+  .title {
+    @include font($lato, 4.5dvh, $white);
+  }
+  .subtitle {
+    @include font($lato, 3.5dvh, $gold);
+  }
+  .price {
+    @include font($lato, 3.5dvh, $white);
+  }
+  button {
+    @include font($lato, 3dvh, $white);
+    padding: 1.6dvh 6dvh;
+    border: 0.4dvh solid $gold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1dvh;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: $dark-brown;
+      border: 0.4dvh solid $dark-brown;
+    }
+  }
+}
