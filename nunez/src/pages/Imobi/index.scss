@@ -1,0 +1,107 @@
+@import "../../styles/Global.scss";
+@mixin Display($position) {
+  display: flex;
+  align-items: $position;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@mixin Respost() {
+  padding: 1.5dvh 2dvh;
+  border-bottom: 0.2dvh solid $gold;
+  width: 40dvh;
+}
+.Main {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  .Left {
+    @include font($lato, 2.6dvh, $white);
+    padding: 7.5dvh 5.5dvh;
+    @include Display(center);
+    gap: 4.5dvh;
+    background: $black-medium;
+    .Thumb {
+      img {
+        border-radius: 2dvh;
+        height: 60dvh;
+        background-size: cover;
+      }
+    }
+    .Description {
+      @include Display(start);
+      gap: 2dvh;
+    }
+  }
+  .Right {
+    padding: 7.5dvh 0;
+    @include Display(center);
+    background: $box-black;
+    .Profile {
+      padding: 2dvh 2dvh;
+      gap: 2.5dvh;
+      @include Display(center);
+      .ProfileTop {
+        display: flex;
+        gap: 2.5dvh;
+      }
+      .ProfileImg {
+        img {
+          height: 20dvh;
+          border-radius: 50%;
+        }
+      }
+      .ProfileDescription {
+        @include font($lato, 2.6dvh, $white);
+        @include Display(start);
+        justify-content: center;
+        gap: 1dvh;
+        p {
+          @include font($lato, 2dvh, $white);
+        }
+      }
+      .ProfileContacts {
+        @include font($lato, 2.6dvh, $white);
+        width: 100%;
+      }
+      .ProfileContactsForm {
+        @include font($lato, 2dvh, $white);
+        @include Display(start);
+        gap: 2dvh;
+        width: 100%;
+        h2 {
+          @include font($lato, 3.6dvh, $white);
+        }
+        form {
+          display: flex;
+          gap: 3dvh;
+          flex-direction: column;
+          input,
+          textarea,
+          button {
+            all: inherit;
+          }
+          input {
+            @include Respost();
+          }
+          textarea {
+            @include Respost();
+            height: 20dvh;
+          }
+          button {
+            padding: 1.5dvh 2dvh;
+            font-weight: bold;
+            color: $black;
+            text-align: center;
+            font-size: 2.5dvh;
+            background: $gold;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            &:hover {
+              background: $dark-brown;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

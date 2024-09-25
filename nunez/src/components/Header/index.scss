@@ -6,7 +6,7 @@ nav {
   align-items: center;
   padding: 1.5dvh 0;
   width: 100%;
-  background: $black;
+  backdrop-filter: blur(0.8dvh);
   box-shadow: $box-black 0 0.625dvh 1.875dvh;
   z-index: 100;
   gap: 30dvh;
@@ -18,10 +18,12 @@ nav {
       height: 16dvh;
       transform: scale(1.6);
       transition: transform 0.3s ease-in-out;
+
       &:hover {
         transform: scale(1.65);
       }
     }
+
     cursor: pointer;
   }
 
@@ -35,7 +37,6 @@ nav {
       @include font($playfair-display, 5dvh, $gold);
       cursor: pointer;
       position: relative;
-
       transition: color 0.3s ease-in-out;
 
       &::after {
